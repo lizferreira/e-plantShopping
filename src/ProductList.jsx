@@ -262,6 +262,7 @@ const handlePlantsClick = (e) => {
   };
 
   const cartItemCount = cartItems.length;
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity,0);
 
     return (
         <div>
